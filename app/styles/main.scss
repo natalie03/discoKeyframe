@@ -1,0 +1,31 @@
+$red: #FF0016;
+$yellow: #FEF450;
+$magenta: #FF0CF6;
+$purple: #B314F5;
+$blue:#2D0887;
+body {
+  text-align: center;
+}
+
+h1 {
+  font: 7em Helvetica;
+  color: white;
+  -webkit-animation: disco 3s infinite;
+}
+
+@-webkit-keyframes disco {
+  0%  { text-shadow: -5px -5px $red; }
+
+  5% { text-shadow: -5px -5px $red, 10px 10px $yellow; }
+
+  10% { text-shadow: -5px -5px $red, 10px 10px $yellow, -15px -15px $magenta; }
+
+  15% { text-shadow: -5px -5px $red, 10px 10px $yellow, -15px -15px $magenta, 20px 20px $purple; }
+  20% { text-shadow: -5px -5px $red, 10px 10px $yellow, -15px -15px $magenta, 20px 20px $purple, -25px -25px $blue; }
+  25% { text-shadow: -5px -5px $red, 10px 10px $yellow, -15px -15px $magenta, 20px 20px $purple, -25px -25px $blue, 30px 30px $red; }
+  30% { text-shadow: -5px -5px $red, 10px 10px $yellow, -15px -15px $magenta, 20px 20px $purple, -25px -25px $blue, 30px 30px $red, -35px -35px $yellow; }
+  35% { text-shadow: -5px -5px $red, 10px 10px $yellow, -15px -15px $magenta, 20px 20px $purple, -25px -25px $blue, 30px 30px $red, -35px -35px $yellow, 40px 40px $magenta; }
+  40% { text-shadow: -5px -5px $red, 10px 10px $yellow, -15px -15px $magenta, 20px 20px $purple, -25px -25px $blue, 30px 30px $red, -35px -35px $yellow, 40px 40px $magenta, -45px -45px $purple; }
+  45% { text-shadow: -5px -5px $red, 10px 10px $yellow, -15px -15px $magenta, 20px 20px $purple, -25px -25px $blue, 30px 30px $red, -35px -35px $yellow, 40px 40px $magenta, -45px -45px $purple, 50px 50px $blue; }
+
+}
